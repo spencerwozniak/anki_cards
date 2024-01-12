@@ -9,9 +9,14 @@ This is the styling I use for my Anki cards to make studying less boring.
 
 Features:
 
-- Countdown timer (with button to hide it). You can use this to gauge how quickly you answer a card if you want to base your scheduling on that.
-- **Bold text** will appear purple, **italic text** will appear red, **underlined text** will appear cyan. I prefer this over simple bold, italic, and underlined text.
-- Scripts are commented if you would like to make your own adjustments.
+- Countdown timer (with button to hide it). (You can use this to gauge how quickly you answer a card if you want to base your scheduling on that.)
+- **Bold text** will appear purple, **italic text** will appear red, **underlined text** will appear cyan. (I prefer this over simple bold, italic, and underlined text.)
+- Hovering over the top of the card will display tags.
+- Sizes of images are automatically adjusted.
+- Font (style, size, and alignment) is more visually appealing (in my opinion)
+- Content centered and sized in a visually appealing way (in my opinion)
+- Background color is more visually appealing (in my opinion)
+- Styling CSS scripts are commented if you would like to make your own adjustments!
 
 ### How to install
 
