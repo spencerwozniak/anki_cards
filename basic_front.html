@@ -1,0 +1,55 @@
+<div id="content">
+    <div class="tags">{{Tags}}</div>
+    {{edit:Front}}
+</div>
+
+<p>
+
+<div id="timerContainer">
+    <span class="timer" id="s2"></span><br>
+    <button id="toggleButton">Hide Timer</button>
+</div>
+
+<script>
+var timerIsActive = true;
+var originalMinutes = 0;
+var originalSeconds = 15;
+var timerId;
+
+function countdown( elementName, minutes, seconds ) {
+    var element, endTime, hours, mins, msLeft, time;
+
+    function twoDigits( n ) {
+        return (n <= 9 ? "0" + n : n);
+    }
+
+    function updateTimer() {
+        if(!timerIsActive) return;
+        msLeft = endTime - (+new Date);
+        if ( msLeft < 1000 ) {
+            element.innerHTML = "0:00";
+        } else {
+            time = new Date( msLeft );
+            hours = time.getUTCHours();
+            mins = time.getUTCMinutes();
+            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+            timerId = setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+        }
+    }
+
+    element = document.getElementById( elementName );
+    endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
+    updateTimer();
+}
+
+countdown("s2", originalMinutes, originalSeconds);
+
+document.getElementById("toggleButton").addEventListener("click", function(){
+    var timerElement = document.getElementById("s2");
+    var toggleButton = document.getElementById("toggleButton");
+    timerElement.style.display = "none";
+    clearTimeout(timerId); // Clear existing timer
+    timerIsActive = false;
+    toggleButton.style.display = "none"; // Hide button after click
+});
+</script>
