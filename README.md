@@ -7,7 +7,7 @@ This is the styling I use for my Anki cards to make studying less boring.
 <img src="images/front_example.png" alt="front_example" width="500"/>
 <img src="images/back_example.png" alt="back_example" width="500"/>
 
-*Note: This code was adapted from the style used by [MileDown's MCAT deck](https://www.reddit.com/r/Mcat/comments/cckw41/my_anki_deck/) and was generated with the assistance of GPT-4.*
+*Note: This code was adapted from the style used by [MileDown's MCAT deck](https://www.reddit.com/r/Mcat/comments/cckw41/my_anki_deck/) and was written with the assistance of GPT-4.*
 
 Features:
 
