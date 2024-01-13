@@ -1,20 +1,20 @@
 html { overflow: scroll; overflow-x: hidden; }
 
-/* MY CONTENT */
+/* CONTENT ON CARD */
 #content {
-    padding: 0px 0px;
+    padding: 0px 0px; /* PADDING IN X Y DIRECTION */
     max-width: 700px; /* CHANGE CARD SIZE HERE */
     margin: 0 auto; /* CENTERS THE CARD IN THE MIDDLE OF THE WINDOW */
-    word-wrap: break-word; /* BREAKS UP LONG WORKS */
+    word-wrap: break-word; /* BREAKS UP LONG WORDS */
 }
 
 /* ENTIRE CARD */
 .card {
-    font-family: Menlo, baskerville, sans;
+    font-family: Menlo, baskerville, sans; /* FONT STYLE */
     font-size: 20px; /* FONT SIZE */
     text-align: center; /* ALIGN TEXT */
     color: #D7DEE9; /* FONT COLOR */
-    line-height: 1.6em;
+    line-height: 1.6em; /* SPACE BETWEEN LINES */
     background-color: #333B45; /* BACKGROUND COLOR */
 }
 
