@@ -1,5 +1,7 @@
 ## Styling for beautiful Anki cards
 
+Anki Download: https://apps.ankiweb.net/
+
 ### Overview
 
 This is the styling I use for my Anki cards to make studying less boring.
